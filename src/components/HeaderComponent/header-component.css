@@ -1,0 +1,125 @@
+.header {
+    display: grid;  
+    position: relative;
+    color: white;
+    height: 90px;
+    background-color: var( --bg-gray200);
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+
+.header--bg {
+    position: absolute;
+    background-color: #161616;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.header--wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr auto auto auto;
+    align-items: center;
+    background-color: #6e6e6e;
+    padding: 0 40px;
+
+}
+
+.header--logo-link {
+    height: auto;
+    width: auto;
+    display: inline-block;
+
+}
+
+.header--logo {
+    fill: white;
+    width: 75px;
+    height: auto;
+    transition: fill .2s;   
+    &:hover {
+        fill: var(--text-red100);
+    }
+}
+
+.header--nav {
+    height: 100%;
+    width: 100%;
+}
+
+.header--number {
+    color: var(--text-white100);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Manrope, Arial, Helvetica, sans-serif;
+}
+
+.header--list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.header--item {
+    padding: 13px 0;
+}
+
+.header--item-link {
+    font-family: Manrope, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    padding: 9px 20px;
+    color: var(--text-white100);
+}
+
+.header--inner {
+    display: flex;
+    margin-left: 30px;
+}
+
+.header--search-button {
+    height: 40px;
+    width: 40px;
+}
+
+.header--search {
+    fill: white;
+    height:30px;
+    width: 30px;
+}
+
+.header--dropdown-trigger {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover .dropwodn-trigger--item{
+        background-color: var(--bg-white100);
+    }
+}
+
+.header--dropdown-trigger-wrapper  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 2px;
+    aspect-ratio: 1/1;
+    height: 20px;
+
+}
+
+.dropwodn-trigger--item {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    border: 2px solid white;
+    transition: background-color .2s;
+}

@@ -1,0 +1,42 @@
+:root {
+  --bg-white100: white;
+  --bg-white200: #f0f2f4;
+  --bg-white300: #e9ebed;
+  --bg-red100: #f14f44;
+  --bg-gray100: #333333;
+  --bg-gray200: #1f1f1f;
+
+  --text-white100: white;
+  --text-white200: #f5f5f5;
+  --text-white300: #e9ebed;
+  --text-red100: #f14f44;
+  --text-red200: #d63637;
+  --text-gray100: #333333;
+  --text-gray200: #333333bf;
+  --text-gray300: #1f1f1f;
+  --text-gray400: #111111;
+  --text-black: #000000;
+
+  --border-white100: white;
+  --border-white200: #f0f2f4;
+  --border-white300: #eceef1;
+  --border-white400: #e0e0e0;
+  --border-white500: #d9d9d9;
+  --border-white600: #cbcbcb;
+  --border-white700: #adadad;
+  --border-gray100: #333333;
+  --border-gray200: #1f1f1f;
+}
+
+body {
+  padding: 0 40px;
+  color: black;
+
+}
+
+* {
+  &:focus-visible {
+    outline: 3px solid var(--bg-red100);
+    outline-offset: 3px;
+  }
+}
